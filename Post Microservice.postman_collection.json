@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "74afa874-cbed-4e04-a83c-56619eaacd58",
+		"name": "Post Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19135530"
+	},
+	"item": [
+		{
+			"name": "posts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2Nsb3RoaW5nYXBwLmZhc2hpb25tYXIuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzA1MjQyODY3LCJleHAiOjE3MDUyNDY0NjcsIm5iZiI6MTcwNTI0Mjg2NywianRpIjoiT3lyeTVVYlpUbW83N0VJRSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OnygzOYTeLzQURsoqmoPTSHyXF0Vcl2Q6tmoNGOvPZ8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://post_microservice.com/api/posts",
+					"protocol": "http",
+					"host": [
+						"post_microservice",
+						"com"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2Nsb3RoaW5nYXBwLmZhc2hpb25tYXIuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzA1MjQyODY3LCJleHAiOjE3MDUyNDY0NjcsIm5iZiI6MTcwNTI0Mjg2NywianRpIjoiT3lyeTVVYlpUbW83N0VJRSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OnygzOYTeLzQURsoqmoPTSHyXF0Vcl2Q6tmoNGOvPZ8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "title 1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "description 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://post_microservice.com/api/post",
+					"protocol": "http",
+					"host": [
+						"post_microservice",
+						"com"
+					],
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
