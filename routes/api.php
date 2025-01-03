@@ -18,3 +18,4 @@ use App\Http\Controllers\PostController;
 
 Route::get('posts', [PostController::class, 'index']);
 Route::post('post', [PostController::class, 'store']);
+Route::post('post/{id}/comment', [PostController::class, 'comment']);
