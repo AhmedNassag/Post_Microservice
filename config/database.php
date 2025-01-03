@@ -63,6 +63,15 @@ return [
             ]) : [],
         ],
 
+        'comment_microservice_db' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST2'),
+            'port' => env('DB_PORT2'),
+            'database' => env('DB_DATABASE2'),
+            'username' => env('DB_USERNAME2'),
+            'password' => env('DB_PASSWORD2'),
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
